@@ -1,0 +1,13 @@
+body {
+	background-color: lightblue;
+}
+
+h1 {
+    color: #ca5862;
+    text-shadow: 2px 1px #88363a;
+    text-align:  center;
+}
+
+p {
+    color: #333333;
+}
