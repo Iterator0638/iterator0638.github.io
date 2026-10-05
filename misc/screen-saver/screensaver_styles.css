@@ -4,11 +4,16 @@ body {
 
 .logo_color {
     background-color: #ff0000;
-    mask-image: url("hako.png");
-    mask-size: cover;
+    mask-image: url("Reta-Resized.png");
+    mask-size: contain;
     mask-repeat: no-repeat;
 }
 
 .tp {
     opacity: 0;
+}
+
+.tips {
+    margin-top: -10px;
+    color: white;
 }
