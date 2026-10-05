@@ -1,0 +1,14 @@
+body {
+    background-color:  black;
+}
+
+.logo_color {
+    background-color: #ff0000;
+    mask-image: url("hako.png");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+.tp {
+    opacity: 0;
+}
