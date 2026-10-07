@@ -1,13 +1,68 @@
 body {
+    display: flex;
+    font-family: "MS P Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
 	background-color: lightblue;
-}
-
-h1 {
-    color: #ca5862;
-    text-shadow: 2px 1px #88363a;
-    text-align:  center;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     color: #333333;
+}
+
+a:link {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+.top-header {
+    display: grid;
+    place-items: center;
+    background-color: #001557;
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+}
+
+.top-header h1 {
+    color: #00ffff;
+    text-shadow: 2px 1px #88363a;
+    margin: 0;
+
+}
+
+.footer {
+    margin: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.footer-content {
+    margin: 20px;
+}
+
+.footer-nav {
+
+}
+
+.footer h2 {
+    color: #333333;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
 }
