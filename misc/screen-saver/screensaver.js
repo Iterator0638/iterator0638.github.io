@@ -47,7 +47,13 @@ function start() {
 
     window.addEventListener("resize", () => {
         checkWindowSize();
+    });
+    document.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    }, { passive: false });
 
+    document.addEventListener('gesturestart', function(event) {
+        event.preventDefault();
     });
 }
 
@@ -58,6 +64,7 @@ function checkWindowSize() {
     } else {
         document.getElementById("tips").style.visibility = "visible";
     }
+    let logo = document.getElementById("logo");
     xAngle = 1;
     yAngle = 1;
     logo.style.left = "32px";
