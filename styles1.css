@@ -39,7 +39,6 @@ a:active {
     color: #00ffff;
     text-shadow: 2px 1px #88363a;
     margin: 0;
-
 }
 
 .footer {
@@ -65,4 +64,16 @@ a:active {
 .content {
     padding: 20px;
     flex: 1;
+}
+
+.not-found {
+    display: grid;
+    place-items:  center;
+}
+
+.not-found h1 {
+    font-size: 128px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
