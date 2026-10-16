@@ -94,3 +94,8 @@ a:active {
     padding: 0;
     border: none;
 }
+
+.access-counter-error {
+    font-size: 20px;
+    color: red;
+}

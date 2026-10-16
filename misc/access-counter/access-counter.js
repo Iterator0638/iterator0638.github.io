@@ -3,7 +3,7 @@ function Start() {
     SetCounter(0);
 
     let r = new XMLHttpRequest();
-    r.addEventListener('load', function() {
+    r.addEventListener("load", function() {
         SetCounter(JSON.parse(this.responseText).count);
     })
 
@@ -15,17 +15,18 @@ function Start() {
             return response.json();
         })
         .then(data => {
-            console.log('Page views:', data.count);
+            console.log("Page views:", data.count);
             SetCounter(data.count);
         })
         .catch(error => {
-            console.error('Error fetching GoatCounter data:', error);
+            console.error("Error fetching GoatCounter data:", error);
+            document.getElementById("access-counter-error").innerText = "訪問者数を取得できませんでした。広告ブロッカーによりブロックされた可能性があります。";
         });
 }
 
 function SetCounter(count) {
     ResetCounter();
-    const counter = document.getElementById('access-counter');
+    const counter = document.getElementById("access-counter");
     const padCount = String(count).padStart(6, "0");
     for (let i = 0; i < padCount.length; i++) {
         const char = padCount[i];
@@ -37,7 +38,7 @@ function SetCounter(count) {
 }
 
 function ResetCounter() {
-    const counter = document.getElementById('access-counter');
+    const counter = document.getElementById("access-counter");
     while (counter.firstChild) {
         counter.removeChild(counter.firstChild);
     }
