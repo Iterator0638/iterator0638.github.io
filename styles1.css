@@ -77,3 +77,20 @@ a:active {
     margin: 0;
     padding: 0;
 }
+
+.access-counter {
+    background-color: #000000;
+    display: inline-flex;
+    border-top: 3px solid #8ca6d1;
+    border-left: 3px solid #8ca6d1;
+    border-bottom: 3px solid #3b4d28;
+    border-right: 3px solid #3b4d28;
+    padding: 2px;
+}
+
+.access-counter img {
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
