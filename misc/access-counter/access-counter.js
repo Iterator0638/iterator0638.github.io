@@ -12,17 +12,11 @@ function Start() {
 
     fetch(url)
         .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok. Check GoatCounter settings.');
-            }
             return response.json();
         })
         .then(data => {
             console.log('Page views:', data.count);
             SetCounter(data.count);
-
-            // Example: Update an HTML element with the count
-            // document.getElementById('view-count').innerText = data.count;
         })
         .catch(error => {
             console.error('Error fetching GoatCounter data:', error);
