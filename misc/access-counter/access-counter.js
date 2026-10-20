@@ -10,7 +10,7 @@ function Start() {
     const path = location.pathname
     const url = `https://iterator0638.goatcounter.com/counter/${encodeURIComponent(path)}.json`;
 
-    fetch(url)
+    fetch(url, { cache: 'no-store' })
         .then(response => {
             return response.json();
         })
