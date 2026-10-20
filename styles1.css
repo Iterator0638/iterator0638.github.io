@@ -3,7 +3,7 @@ body {
     font-family: "MS P Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     flex-direction: column;
     min-height: 100vh;
-	background-color: lightblue;
+    background-color: lightblue;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -27,12 +27,9 @@ a:active {
 }
 
 .top-header {
-    display: grid;
-    place-items: center;
+    text-align: center;
+    padding: 20px 0;
     background-color: #001557;
-    width: 100%;
-    height: 75px;
-    overflow: hidden;
 }
 
 .top-header h1 {
@@ -41,12 +38,19 @@ a:active {
     margin: 0;
 }
 
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.vertical {
+    font-size: 40px;
+    writing-mode: vertical-rl;
+}
+
 .footer {
-    margin: 0;
     background-color: #FFFFFF;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
+    padding: 15px 0;
 }
 
 .footer-content {
@@ -54,21 +58,15 @@ a:active {
 }
 
 .footer-nav {
-
 }
 
 .footer h2 {
     color: #333333;
 }
 
-.content {
-    padding: 20px;
-    flex: 1;
-}
-
 .not-found {
     display: grid;
-    place-items:  center;
+    place-items: center;
 }
 
 .not-found h1 {
