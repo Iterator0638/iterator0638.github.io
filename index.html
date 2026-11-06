@@ -3,18 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>トップページ - Iterator0638のホームページ</title>
-        <link rel="stylesheet" href="styles1.css">
-        <link rel="icon" href="images/favicon.ico">
-        <script data-goatcounter="https://iterator0638.goatcounter.com/count"
-                async src="//gc.zgo.at/count.js"></script>
-        <meta property="og:site_name" content="Iterator0638のホームページ">
-        <meta property="og:title" content="トップページ - Iterator0638のホームページ">
-        <meta property="og:description" content="Iterator0638(いてれた/れた)がHTMLとCSSとJavaScriptの勉強をするために作っているサイトです。">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.iterator0638.com">
+        <link href="styles1.css" rel="stylesheet">
+        <link href="images/favicon.ico" rel="icon">
+        <script async
+                data-goatcounter="https://iterator0638.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
+        <meta content="Iterator0638のホームページ" property="og:site_name">
+        <meta content="トップページ - Iterator0638のホームページ" property="og:title">
+        <meta content="Iterator0638(いてれた/れた)がHTMLとCSSとJavaScriptの勉強をするために作っているサイトです。"
+              property="og:description">
+        <meta content="website" property="og:type">
+        <meta content="https://www.iterator0638.com" property="og:url">
         <!-- TODO Add image for OGP
-         <meta property="og:image" content="https://example.com">-->
-        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:image" content="https://example.com">-->
+        <meta content="ja_JP" property="og:locale"/>
     </head>
     <body>
         <header class="top-header">
@@ -22,11 +23,25 @@
         </header>
 
         <main class="content">
-            <h2>トップページ</h2>
-            <h3>このサイトについて</h3>
+            <a href="index.html" target="_self">トップページ</a>
+
+            <h2>このサイトについて</h2>
             <p>このサイトはIterator0638(いてれた/れた)がHTMLとCSSとJavaScriptの勉強をするために作っているサイトです。<br>
-            ほとんどの部分は<a href="https://developer.mozilla.org/ja/" target="_blank">MDN Web Docs<img src="images/new-tab.svg" width="14" alt="(新しいタブで開く)"/></a>や、<a href="https://www.tohoho-web.com/" target="_blank">とほほのＷＷＷ入門<img src="images/new-tab.svg" width="14" alt="(新しいタブで開く)"/></a>を参考にしながら、わからない部分はAIに聞いたりして作成しました。<br>
-            Windowsで動作確認しただけなので、閲覧環境によってはうまく動作しないかもしれません。</p>
+                ほとんどの部分は
+                <a href="https://developer.mozilla.org/ja/" target="_blank">MDN Web Docs<img alt="(新しいタブで開く)"
+                                                                                             src="images/new-tab.svg"
+                                                                                             width="14"/></a>や、
+                <a href="https://www.tohoho-web.com/" target="_blank">とほほのＷＷＷ入門<img alt="(新しいタブで開く)"
+                                                                                          src="images/new-tab.svg"
+                                                                                          width="14"/></a>
+                を参考にしながら、わからない部分はAIに聞いたりして作成しました。<br>
+                Windowsで動作確認しただけなので、閲覧環境によってはうまく動作しないかもしれません。</p>
+
+            <h2>Iterator0638について</h2>
+            <img alt="ルルネ" class="image" height="300" src="images/rurune.jpg" width="533">
+            <p>VRChatに引きこもってる変な人。ルルネばっかり使ってます。<br>
+                時々ワールド制作をしています。<br>
+                UnityとC#をメインに、Java・Python・HTML・C++などを触っていますが、特に詳しいというわけでもないです。</p>
 
         </main>
 
@@ -38,24 +53,39 @@
                     <ul>
                         <li><a href="index.html" target="_self">トップページ</a></li>
                         <li><a href="misc/index.html" target="_self">雑多</a></li>
-                        <li><a href="blog/index.html" target="_self">ブログ</a></li>
+                        <li><a href="blog/index.html" target="_self">ブログ(予定地)</a></li>
                     </ul>
                 </nav>
 
                 <h2>外部サイト</h2>
                 <nav class="footer-nav">
                     <ul>
-                        <li><a href="https://x.com/enumeration1276" target="_blank">@enumeration1276<img src="images/new-tab.svg" width="14" alt="(新しいタブで開く)"/></a> - Iterator0638のX(旧Twitter)</li>
-                        <li><a href="https://github.com/Iterator0638" target="_blank">Iterator0638<img src="images/new-tab.svg" width="14" alt="(新しいタブで開く)"/></a> - Iterator0638のGithub</li>
-                        <li><a href="https://vrchat.com/home/user/usr_617551aa-2d39-4a33-9c72-9281b3db13cf" target="_blank">Iterator0638<img src="images/new-tab.svg" width="14" alt="(新しいタブで開く)"/></a> - Iterator0638のVRChat</li>
+                        <li><a href="https://x.com/enumeration1276" target="_blank">@enumeration1276<img
+                                alt="(新しいタブで開く)" src="images/new-tab.svg" width="14"/></a> -
+                            Iterator0638のX(旧Twitter)
+                        </li>
+                        <li><a href="https://github.com/Iterator0638" target="_blank">Iterator0638<img
+                                alt="(新しいタブで開く)" src="images/new-tab.svg" width="14"/></a> - Iterator0638のGithub
+                        </li>
+                        <li><a href="https://vrchat.com/home/user/usr_617551aa-2d39-4a33-9c72-9281b3db13cf"
+                               target="_blank">Iterator0638<img alt="(新しいタブで開く)" src="images/new-tab.svg"
+                                                                width="14"/></a> - Iterator0638のVRChat
+                        </li>
+                        <li><a href="https://iterator0638.booth.pm/" target="_blank">いてれたの廃品倉庫<img
+                                alt="(新しいタブで開く)" src="images/new-tab.svg" width="14"/></a> - Iterator0638のBooth
+                        </li>
                     </ul>
                 </nav>
 
                 <br>
                 <div class="access-counter-error" id="access-counter-error"></div>
-                <div>あなたは<div class="access-counter" id="access-counter"></div>人目の訪問者です。</div>
+                <div>あなたは
+                    <div class="access-counter" id="access-counter"></div>
+                    人目の訪問者です。
+                </div>
                 <script src="misc/access-counter/access-counter.js"></script>
-                <p>このサイトは<a href="https://docs.github.com/ja/pages" target="_blank">GitHub Pages<img src="images/new-tab.svg" width="14" alt="(新しいタブで開く)"/></a>を使って運用しています。</p>
+                <p>このサイトは<a href="https://docs.github.com/ja/pages" target="_blank">GitHub Pages<img
+                        alt="(新しいタブで開く)" src="images/new-tab.svg" width="14"/></a>を使って運用しています。</p>
             </div>
         </footer>
     </body>

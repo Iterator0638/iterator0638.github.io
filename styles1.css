@@ -1,6 +1,6 @@
 body {
     display: flex;
-    font-family: "MS P Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: sans-serif;
     flex-direction: column;
     min-height: 100vh;
     background-color: lightblue;
@@ -43,6 +43,11 @@ a:active {
     flex: 1;
 }
 
+.image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
 .vertical {
     font-size: 40px;
     writing-mode: vertical-rl;
@@ -62,18 +67,6 @@ a:active {
 
 .footer h2 {
     color: #333333;
-}
-
-.not-found {
-    display: grid;
-    place-items: center;
-}
-
-.not-found h1 {
-    font-size: 128px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
 }
 
 .access-counter {
